@@ -1,0 +1,163 @@
+/* Setting heights for images and icon */
+.menu-icon, .upload-icon, .notification-icon, .search-icon, .voice-search-icon{
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Setting tooltip box */
+.tolltip{
+    position: absolute;
+    left: 0;
+    background-color: gray;
+    color: wheat;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.item-search-icon:hover .tolltip, .item-voice-search-icon:hover .tolltip,
+.item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip{
+    opacity: 1;
+}
+
+
+/* Setting header div */
+.top-bar-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    /* background-color: lightblue; */
+    padding: 0px 20px 0px 20px;
+}
+
+
+/* Setting 3 divs of header div */
+.items-container-left, .items-container-center, .items-container-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-container-center{
+    flex: 1;
+    max-width: 650px;
+}
+
+.items-container-center{
+    margin-left: 85px;
+    margin-right: 70px;
+}
+
+
+/* Setting 1st div of the header */
+.item-menu-icon{
+    padding: 7px 7px 2px 7px;
+    border-radius: 1222px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.item-menu-icon:hover{
+    background-color:  #dbdbdb;
+}
+
+.youtube-icon{
+    height: 21px;
+    cursor: pointer;
+}
+
+
+/* Setting center div of header divs */
+.item-search-bar{
+    flex: 1;
+}
+
+.search-bar{
+    width: 100%;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid #d3d3d3;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow:inset 0 0 2px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    transition: box-shadow 0.15s, border-color 0.15s ease;
+}
+
+.search-bar:focus{
+    box-shadow:inset 0 0 4px rgba(0, 0, 0, 0.3);
+    border-color: #1c62b9;
+    outline: none; /* Removes the default outline */
+}
+
+.search-bar::placeholder{
+    font-size: 16px;
+    color: #8897ba; 
+}
+
+.item-search-icon{
+    position: relative;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    padding: 5px 15px 5px 20px;
+    border-left: none;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.item-search-icon:hover{
+    background-color: #f1f0f0;
+    border-color: #bbbbbb;
+}
+
+.item-voice-search-icon{
+    position: relative;
+    border: 0px solid #d3d3d3;
+    background-color: #f2f2f2;
+    padding: 6px 8px;
+    border-radius: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.item-voice-search-icon:hover{
+    background-color: #dbdbdb;
+}
+
+
+/* setting divs of 3rd div in header */
+.item-upload-icon, .item-notification-icon{
+    position: relative;
+    padding: 6px 6px 3px 6px;
+    border-radius: 20px;
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.item-upload-icon:hover, .item-notification-icon:hover{
+    background-color: #dbdbdb;
+}
+
+.item-notification-icon{
+    margin: 0px 15px;
+}
+
+.profile-picture{
+    width: 35px;
+    height: 35px;
+    border-radius: 16000px;
+    cursor: pointer;
+    margin-right: 8px;
+}

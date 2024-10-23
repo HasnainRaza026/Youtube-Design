@@ -1,0 +1,13 @@
+html{
+    font-family: Roboto, Arial, sans-serif;
+}
+
+div, p, body, span, button, input{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 3000px;
+}

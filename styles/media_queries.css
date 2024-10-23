@@ -1,0 +1,5 @@
+@media (max-width: 656px) {
+    .items-container-center{
+        opacity: 0;
+    }
+}
