@@ -1,5 +1,14 @@
-@media (max-width: 656px) {
+/* Media Query for Header */
+@media only screen and (max-width: 656px) {
     .items-container-center{
-        opacity: 0;
+        display: none; /* This hides/removes the input field */
+    }
+
+    .item-notification-icon{
+        margin: 0px 10px 0px 6px;
+    }
+
+    .media-query-search-div{
+        display: flex;
     }
 }

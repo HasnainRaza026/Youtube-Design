@@ -1,5 +1,5 @@
 /* Setting heights for images and icon */
-.menu-icon, .upload-icon, .notification-icon, .search-icon, .voice-search-icon{
+.menu-icon, .upload-icon, .notification-icon, .search-icon, .voice-search-icon, .media-query-search-icon, .media-query-voice-search-icon{
     height: 24px;
     width: 24px;
 }
@@ -55,7 +55,7 @@
 
 .items-container-center{
     margin-left: 85px;
-    margin-right: 70px;
+    margin-right: 0px;
 }
 
 
@@ -113,6 +113,7 @@
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
     cursor: pointer;
+    margin-left: 14px;
     transition: background-color 0.15s, border-color 0.15s;
 }
 
@@ -138,7 +139,22 @@
 
 
 /* setting divs of 3rd div in header */
-.item-upload-icon, .item-notification-icon{
+.items-container-right{
+    position: relative;
+    padding-left: 75px;
+}
+
+.media-query-search-div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    bottom: 2px;
+    display: none;
+}
+
+.item-upload-icon, .item-notification-icon, .media-query-item-search-icon, .media-query-item-voice-search-icon{
     position: relative;
     padding: 6px 6px 3px 6px;
     border-radius: 20px;
@@ -146,7 +162,7 @@
     cursor: pointer;
 }
 
-.item-upload-icon:hover, .item-notification-icon:hover{
+.item-upload-icon:hover, .item-notification-icon:hover, .media-query-item-search-icon:hover, .media-query-item-voice-search-icon:hover{
     background-color: #dbdbdb;
 }
 
