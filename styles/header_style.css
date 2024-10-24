@@ -20,7 +20,8 @@
 }
 
 .item-search-icon:hover .tolltip, .item-voice-search-icon:hover .tolltip,
-.item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip{
+.item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip,
+.media-query-item-search-icon:hover .tolltip, .media-query-item-voice-search-icon:hover .tolltip{
     opacity: 1;
 }
 
