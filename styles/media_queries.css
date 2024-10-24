@@ -12,3 +12,10 @@
         display: flex;
     }
 }
+
+
+@media only screen and (max-width: 791px){
+    .left-bar-container{
+        display: none;
+    }
+}
