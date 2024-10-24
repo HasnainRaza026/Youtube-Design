@@ -5,33 +5,13 @@
 }
 
 
-/* Setting tooltip box */
-.tolltip{
-    position: absolute;
-    left: 0;
-    background-color: gray;
-    color: wheat;
-    font-size: 12px;
-    padding: 8px 8px;
-    border-radius: 4px;
-    white-space: nowrap;
-    opacity: 0;
-    transition: opacity 0.15s ease;
-}
-
-.item-search-icon:hover .tolltip, .item-voice-search-icon:hover .tolltip,
-.item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip,
-.media-query-item-search-icon:hover .tolltip, .media-query-item-voice-search-icon:hover .tolltip{
-    opacity: 1;
-}
-
-
 /* Setting header div */
 .top-bar-container{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1000;
 
     display: flex;
     justify-content: space-between;

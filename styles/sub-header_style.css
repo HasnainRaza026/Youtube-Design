@@ -1,0 +1,91 @@
+/* Resize arrow image */
+.sub-top-bar-right-arrow img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Setting sub top bar div */
+.sub-top-bar-container {
+    position: fixed;
+    top: 56px;
+    left: 78px;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+/* Setting the div containing all the divs of text */
+.sub-top-bar-container-flex{
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+    padding: 0px 24px;  
+    overflow-x: auto; /* Allows horizontal scrolling if necessary */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+}
+
+.sub-top-bar-container-flex::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+
+/* Setting item divs that contain text */
+.item-sub-top-bar{
+    background-color: rgb(242, 242, 242);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    white-space: nowrap; /* Prevents wrapping of text to the next line */
+    cursor: pointer;
+    margin: 12px 12px 12px 0px;
+    padding: 7px 12px;
+    transition: background-color 0.15s ease;
+}
+
+.item-sub-top-bar:hover{
+    background-color: #e9e7e7;
+}
+
+.item-sub-top-bar:nth-child(1) { /* Target first child of the div */
+    background-color: black;
+    color: white;
+}
+
+
+/* Setting right arrow */
+.sub-top-bar-right-arrow-container{
+    background-color: white;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+    box-shadow: -5px 0 10px white; /* Left side shadow */
+}
+
+.sub-top-bar-right-arrow{
+    padding: 8px 8px 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-top-bar-right-arrow:hover{
+    background-color: #e9e7e7;
+}

@@ -18,4 +18,8 @@
     .left-bar-container{
         display: none;
     }
+
+    .sub-top-bar-container{
+        left: 0;
+    }
 }

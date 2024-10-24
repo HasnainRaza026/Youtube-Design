@@ -11,3 +11,26 @@ div, p, body, span, button, input{
 body{
     height: 3000px;
 }
+
+
+/* Setting tooltip box */
+.tolltip{
+    position: absolute;
+    left: 0;
+    background-color: gray;
+    color: wheat;
+    font-size: 12px;
+    padding: 8px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    z-index: 1000900000;
+}
+
+.item-search-icon:hover .tolltip, .item-voice-search-icon:hover .tolltip,
+.item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip,
+.media-query-item-search-icon:hover .tolltip, .media-query-item-voice-search-icon:hover .tolltip,
+.sub-top-bar-right-arrow:hover .tolltip{
+    opacity: 1;
+}
