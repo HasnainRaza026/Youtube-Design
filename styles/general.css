@@ -25,12 +25,11 @@ body{
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.15s ease;
-    z-index: 1000900000;
 }
 
 .item-search-icon:hover .tolltip, .item-voice-search-icon:hover .tolltip,
 .item-upload-icon:hover .tolltip, .item-notification-icon:hover .tolltip,
 .media-query-item-search-icon:hover .tolltip, .media-query-item-voice-search-icon:hover .tolltip,
-.sub-top-bar-right-arrow:hover .tolltip{
+.sub-top-bar-right-arrow:hover .tolltip, .video-text-chennel-name:hover .tolltip{
     opacity: 1;
 }
