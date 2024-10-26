@@ -14,6 +14,7 @@
 }
 
 
+/* Media Query for Side Bar */
 @media only screen and (max-width: 791px){
     .left-bar-container{
         display: none;
@@ -21,5 +22,47 @@
 
     .sub-top-bar-container{
         left: 0;
+    }
+
+    .main-content-container{
+        margin-left: 0;
+    }
+}
+
+
+/* Media Query for Sub Header and Main content div */
+@media only screen and (max-width: 1096px){
+    .main-content-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 698px){
+    .main-content-container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+    }
+    
+    body, .sub-top-bar-container{
+        display: grid;
+        place-items: center;
+    }
+
+    .sub-top-bar-container{
+        justify-content: space-around; 
+        padding-left: 20px;
+    }
+
+    .sub-top-bar-container-flex{
+        flex: 1;
+        max-width: 520px;
+    }
+
+    
+
+    .sub-top-bar-right-arrow-container{
+        padding-left: 30px;
     }
 }

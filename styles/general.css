@@ -8,11 +8,6 @@ div, p, body, span, button, input{
 }
 
 
-body{
-    height: 3000px;
-}
-
-
 /* Setting tooltip box */
 .tolltip{
     position: absolute;
