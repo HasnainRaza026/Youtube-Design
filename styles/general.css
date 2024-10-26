@@ -28,3 +28,13 @@ div, p, body, span, button, input{
 .sub-top-bar-right-arrow:hover .tolltip, .video-text-chennel-name:hover .tolltip{
     opacity: 1;
 }
+
+
+/* Extra */
+.last{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    margin-top: 50px;
+}

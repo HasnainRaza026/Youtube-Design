@@ -13,6 +13,12 @@
     }
 }
 
+@media only screen and (max-width: 1363px){
+    .last{
+        display: none;
+    }
+}
+
 
 /* Media Query for Side Bar */
 @media only screen and (max-width: 791px){
